@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p {
+            color: yellow;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+        }
+
+        body {
+            color: white;
+            background-color: black;
+        }
+
+        #purchase {
+            border: 1px solid white;
+            background-color: #333;
+            color: #ccc;
+            padding: 1em;
+        }
+
+        #purchase li {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>what to buy</h1>
+    <p title="a gentle reminder">don't forget to buy this stuff.</p>
+    <ul id="purchase">
+        <li>a tin of beans</li>
+        <li class="sale">cheese</li>
+        <li class="sale">milk</li>
+    </ul>
+    <p>this is just a test</p>
+    <script>
+            var items=document.getElementsByTagName("p");
+            for(var i=0;i<items.length;i++){
+                if(items[i].getAttribute("title")!=null){
+                    items[i].setAttribute("title","brand new title test");
+                alert(items[i].getAttribute("titlel"));
+                }
+            }
+           
+    </script>
+</body>
+
+</html>

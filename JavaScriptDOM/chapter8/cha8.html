@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <!-- PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Explaining the Document Object Model</title>
+    <link rel="stylesheet" media="screen" href="style/typography.css">
+</head>
+<body>
+    <ul>
+        <a href="index.html" accesskey="1">home</a>
+        <a href="search.html" accesskey="4">search</a>
+        <a href="contact.htmll" accesskey="0">contact</a>
+    </ul>
+    <h1>What is the Document Object Model?</h1>
+    <p>The <abbr title="World Wide Web Consortium">W3C</abbr> defines 
+        the <abbr title="Document Object Model">DOM</abbr> as:
+    </p>
+    <blockquote cite="http://www.w3.org/DOM/">
+    <p>
+        A platform- and language-neutral interface that will allow programs
+        and scripts to dynamically access and update the
+        content,structure and style of documents.
+    </p>
+    </blockquote>
+
+    <p>
+        It is an <abbr title="Application Programming Interface">API</abbr> 
+        that can be used to navigate <abbr title="HyperText Markup Language">
+        HTML</abbr> and <abbr title="eXtensible Markup Language">XML
+        </abbr> documents.
+    </p>
+    <!-- 注意引用顺序， displayAbbreviations.js依赖于addLoadEvent.js-->
+    <script src="js/addLoadEvent.js"></script>
+    <script src="js/displayAbbreviations.js"></script>
+    <script src="js/displayCitations.js"></script>
+    <script src="js/displayAccessKeys.js"></script>
+</body>
+</html>
